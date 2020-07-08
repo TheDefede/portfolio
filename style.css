@@ -1,0 +1,232 @@
+@import url("https://fonts.googleapis.com/css2?family=Anton&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Raleway:700&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:200i,300,400&display=swap");
+*, *::before, *::afeter {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: 100%;
+  font-family: "Relaway";
+}
+
+#navbar {
+  position: fixed;
+  top: 0;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  background: #be3144;
+}
+@media (max-width: 450px) {
+  #navbar {
+    justify-content: center;
+  }
+}
+#navbar .nav-link {
+  width: 150px;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#navbar .nav-link a {
+  text-decoration: none;
+  color: white;
+  font-size: 1.6em;
+}
+
+#welcome-section {
+  margin-top: 70px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(62deg, #3a3d40, #181719);
+  color: white;
+}
+#welcome-section h1 {
+  font-family: "Relaway", sans-serif;
+  font-size: 4em;
+  margin: 0;
+}
+@media (max-width: 450px) {
+  #welcome-section h1 {
+    text-align: center;
+    font-size: 3.5em;
+  }
+}
+#welcome-section p {
+  font-family: "Poppins";
+  margin-top: 16px;
+  color: #be3144;
+  font-size: 2em;
+}
+@media (max-width: 450px) {
+  #welcome-section p {
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+#projects {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: column wrap;
+  background-color: #45567d;
+  color: white;
+}
+#projects .title {
+  margin-top: 150px;
+  border-bottom: 2px solid white;
+  font-size: 3em;
+}
+@media (max-width: 450px) {
+  #projects .title {
+    text-align: center;
+    font-size: 2.1em;
+    margin-top: 100px;
+    width: 90%;
+  }
+}
+#projects .projects-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  width: 80%;
+  margin: 0px auto;
+}
+@media (max-width: 450px) {
+  #projects .projects-container {
+    width: 100%;
+  }
+}
+#projects .projects-container a {
+  font-family: "Poppins";
+  color: white;
+  text-decoration: none;
+  font-size: 1.5em;
+  margin: 30px;
+}
+#projects .projects-container .tribute-page {
+  background: url("https://i.ibb.co/wY8DgPP/tribute-page.jpg") no-repeat;
+  background-size: cover;
+}
+#projects .projects-container .shoping-list {
+  background: url("https://i.ibb.co/jrgjh7D/shoping-list.jpg") no-repeat;
+  background-size: cover;
+}
+#projects .projects-container .survey {
+  background: url("https://i.ibb.co/rG7f0yJ/survey.jpg") no-repeat;
+  background-size: cover;
+}
+#projects .projects-container .technical {
+  background: url("https://i.ibb.co/Zh2KM49/technical.jpg") no-repeat;
+  background-size: cover;
+}
+#projects .projects-container .shop {
+  background: url("https://i.ibb.co/GRT2kM7/shop.jpg") no-repeat;
+  background-size: cover;
+}
+#projects .projects-container .project-tile {
+  width: 400px;
+  height: 475px;
+  display: flex;
+  align-items: flex-end;
+  transition: transform 0.5s;
+}
+#projects .projects-container .project-tile:hover {
+  transform: scale(1.1);
+}
+@media (max-width: 450px) {
+  #projects .projects-container .project-tile {
+    margin: 10px 0px;
+    width: 330px;
+    height: 400px;
+  }
+}
+#projects .projects-container .project-tile div {
+  width: 100%;
+  height: 75px;
+  background-color: #303841;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+a {
+  text-decoration: none;
+}
+a #button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 175px;
+  height: 40px;
+  border: transparent;
+  background: #303841;
+  color: white;
+  font-size: 1em;
+  font-weight: bold;
+  margin: 75px 0px;
+}
+
+#contact {
+  height: calc(100vh - 70px);
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  background: #303841;
+  color: white;
+}
+#contact footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 70%;
+}
+@media (max-width: 450px) {
+  #contact footer {
+    width: 100%;
+  }
+}
+#contact footer a {
+  text-decoration: none;
+  padding: 10px 25px;
+  font-size: 2em;
+  color: white;
+}
+#contact img {
+  width: 32px;
+  height: auto;
+}
+#contact h1 {
+  font-family: "Relaway", sans-serif;
+  font-size: 4em;
+  margin: 0;
+}
+@media (max-width: 450px) {
+  #contact h1 {
+    text-align: center;
+    font-size: 3.5em;
+  }
+}
+#contact p {
+  font-family: "Poppins";
+  margin-top: 16px;
+  font-size: 2em;
+}
+@media (max-width: 450px) {
+  #contact p {
+    text-align: center;
+    font-size: 1.5em;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
